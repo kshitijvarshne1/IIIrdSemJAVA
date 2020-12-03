@@ -32,7 +32,7 @@ public class SampleList {
         contactsList.add(friend2);
         System.out.println(contactsList);
 
-        List<String> city =new ArrayList<>();
+        List<String> city = new ArrayList<>();
         city.add("Kanpur");
         city.add("Agra");
         for (String s : city) {
