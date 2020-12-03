@@ -9,6 +9,7 @@ package collection;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class SampleList {
@@ -31,6 +32,13 @@ public class SampleList {
         contactsList.add(friend2);
         System.out.println(contactsList);
 
+        List<String> city =new ArrayList<>();
+        city.add("Kanpur");
+        city.add("Agra");
+        for (String s : city) {
+            System.out.println(s);
+        }
+        System.out.println(city.get(1));
 
     }
 }
