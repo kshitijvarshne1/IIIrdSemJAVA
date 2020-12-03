@@ -8,5 +8,8 @@
 package collection;
 
 public class SampleList {
+    public static void main(String[] args) {
+
+    }
 }
 
