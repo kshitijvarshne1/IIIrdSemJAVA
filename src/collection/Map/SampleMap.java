@@ -17,7 +17,6 @@ public class SampleMap {
         rollNumbers.put(3, "Tam");
         System.out.println(rollNumbers);
         System.out.println("name of rollnumber 2 :- " + rollNumbers.get(2));
-
     }
 }
 
