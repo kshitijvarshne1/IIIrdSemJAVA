@@ -60,7 +60,7 @@ public class SampleRegex {
                 JOptionPane.PLAIN_MESSAGE
         );
         Matcher matcher1 = pattern.matcher(input1);  //Test String
-        if (matcher1.matches()) {
+        if (matcher1.find()) {
             JOptionPane.showMessageDialog(
                     null,
                     "The test string passed ",
@@ -76,6 +76,30 @@ public class SampleRegex {
             );
 
         }
+
+        /*
+        * 3.group()
+        * We can obtain a string that will contain the last
+        * matching sequence of character from the test string
+        * */
+
+        Pattern pattern2 = Pattern.compile("^\\d{4}");
+        String input2 = JOptionPane.showInputDialog(
+                null,
+                "Please enter your 12 digit aadhar card number",
+                "Aadhar Card Number",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        Matcher matcher2 = pattern.matcher(input2);  //Test String
+        if (matcher2.find()) {
+            System.out.println("passed");
+            System.out.println("Passed character "+ matcher2.group());
+
+        } else {
+            System.out.println("Not passed");
+        }
+
+
 
 
     }
