@@ -59,7 +59,7 @@ public class SampleRegex {
                 "Aadhar Card Number",
                 JOptionPane.PLAIN_MESSAGE
         );
-        Matcher matcher1 = pattern.matcher(input1);  //Test String
+        Matcher matcher1 = pattern1.matcher(input1);  //Test String
         if (matcher1.find()) {
             JOptionPane.showMessageDialog(
                     null,
@@ -90,7 +90,7 @@ public class SampleRegex {
                 "Aadhar Card Number",
                 JOptionPane.PLAIN_MESSAGE
         );
-        Matcher matcher2 = pattern.matcher(input2);  //Test String
+        Matcher matcher2 = pattern2.matcher(input2);  //Test String
         if (matcher2.find()) {
             System.out.println("passed");
             System.out.println("Passed character "+ matcher2.group());
