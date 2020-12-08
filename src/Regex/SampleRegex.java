@@ -44,7 +44,40 @@ public class SampleRegex {
                     "Result",
                     JOptionPane.ERROR_MESSAGE
             );
+
         }
+        // Methods from the java.Util.regex.Matcher Class
+        /*
+         * 2.find() method
+         * The find method can match a test string against a pattern even if
+         * only subsequences are matched.
+         * */
+        Pattern pattern1 = Pattern.compile("^\\d{4}");
+        String input1 = JOptionPane.showInputDialog(
+                null,
+                "Please enter your 12 digit aadhar card number",
+                "Aadhar Card Number",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        Matcher matcher1 = pattern.matcher(input1);  //Test String
+        if (matcher1.matches()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "The test string passed ",
+                    "Result",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "The test string  Failed ",
+                    "Result",
+                    JOptionPane.ERROR_MESSAGE
+            );
+
+        }
+
+
     }
 }
 
