@@ -7,6 +7,24 @@
 
 package GenericProgramming;
 
-public class Sample2 {
+/*
+* Generics : For Creating
+* 1.Generics Class
+* 2.Generics Method
+* 3.Generics Interface
+* If you create a class as a "generic class. you can send the 'type' of the data
+* you want to operate on as a parameter to the class.
+* */
+
+public class Sample2<T> {
+    public void method1(T parameter){
+        System.out.println(parameter.getClass().getSimpleName());
+    }
+
+    public static void main(String[] args) {
+    Sample2<Integer> object = new Sample2<Integer>();
+    object.method1(5);
+    }
+
 }
 
