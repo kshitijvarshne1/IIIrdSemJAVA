@@ -8,5 +8,21 @@
 package GenericProgramming;
 
 public class Sample {
+    public void method1(Object number){
+        System.out.println("Parameter value:- "+number);
+        System.out.println("Type of parameter is now :- "+number.getClass().getSimpleName());
+    }
+
+    public void method2(Object name){
+        System.out.println("Parameter value:- "+name);
+        System.out.println("Type of parameter is now :- "+name.getClass().getSimpleName());
+    }
+    public static void main(String[] args) {
+        Sample demo1 = new Sample();
+        demo1.method1(78);
+        demo1.method2("Ram");
+
+    }
 }
 
+//This idea of making Object(parent class of all child class) is not working when we return the value from method
