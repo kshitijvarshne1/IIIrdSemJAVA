@@ -17,10 +17,18 @@ public class Sample {
         System.out.println("Parameter value:- "+name);
         System.out.println("Type of parameter is now :- "+name.getClass().getSimpleName());
     }
+
+    public Object method3(Object number){
+        System.out.println("Parameter value:- "+number);
+        System.out.println("Type of parameter is now :- "+number.getClass().getSimpleName());
+        return number;
+    }
+
     public static void main(String[] args) {
         Sample demo1 = new Sample();
         demo1.method1(78);
         demo1.method2("Ram");
+        Object value = demo1.method3("ds");
 
     }
 }
