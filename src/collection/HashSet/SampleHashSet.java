@@ -21,6 +21,9 @@ public class SampleHashSet {
         rollNumber.add(7);
         rollNumber.add(21);
         rollNumber.add(1);
+        rollNumber.add(55);
+        rollNumber.add(1233);
+
         System.out.println(rollNumber);
         rollNumber.add(1);
         System.out.println(rollNumber);
