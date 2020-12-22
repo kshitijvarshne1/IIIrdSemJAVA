@@ -11,7 +11,7 @@ import java.util.HashSet;
 
 public class SampleHashSet {
     public static void main(String[] args) {
-        HashSet<Integer> rollNumber= new HashSet<>();
+        HashSet<Integer> rollNumber = new HashSet<>();
         rollNumber.add(23);
         rollNumber.add(2);
         rollNumber.add(3);
@@ -23,11 +23,10 @@ public class SampleHashSet {
         rollNumber.add(1);
         rollNumber.add(55);
         rollNumber.add(1233);
-
         System.out.println(rollNumber);
         rollNumber.add(1);
         System.out.println(rollNumber);
-        System.out.println("Size of hashset(rollNumber) :- "+rollNumber.size());
+        System.out.println("Size of hashset(rollNumber) :- " + rollNumber.size());
         //rollNumber.clear();
         System.out.println(rollNumber);
 
